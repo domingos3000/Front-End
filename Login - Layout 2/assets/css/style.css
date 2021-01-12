@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 9, 5);
+}
+
+h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.box-form {
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    position: relative;
+    justify-content: initial;
+    align-items: initial;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+
+.anima::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #0e0e0e;
+    transform: translateX(-100%);
+    animation: vir .5s ease-out;
+    
+}
+
+.anima::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #414d56;
+    transform: translateX(-100%);
+    animation: vir-2 .5s ease-out;
+    
+}
+
+
+@keyframes vir {
+    0% {
+        transform: translateX(-100%);
+    } 
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes vir-2 {
+    0% {
+        transform: translateX(100%);
+    } 
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.box-form .box-form-left {
+    flex-basis: 50%;
+    flex-direction: column;
+    padding: 1em;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+
+    background-image: linear-gradient(#00000085, #000000ec),url(../img/cup-of-coffee-1280537_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-form .box-form-left p {
+    margin: 1em 0;
+}
+
+.btn {
+    color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    outline: none;
+    transition: .5s all;
+    width: 10em;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.box-form .box-form-right {
+    background-color: #802a1b;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding: 1em;
+
+}
+
+input {
+    width: 20em;
+    padding: .8em 3em;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.input-login {position: relative;}
+
+.input-login img {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+    width: 20px;
+}
