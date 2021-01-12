@@ -1,0 +1,31 @@
+/* ==== RESPONSIVIDADE === */
+
+@media screen and (max-width: 1000px){
+    
+    .svg {display: none;}
+
+    .container
+    {
+        justify-content: center;
+        align-items: center;
+        top: 7rem;
+    }
+
+    .title { top: -9rem;}
+}
+
+@media screen and (max-width: 500px){
+    
+    .formulario {top: -8rem;}
+    .content {height: 70vh;}
+
+    .content > div, .possuirconta, .forget
+    {
+        margin: .5rem 0;
+    }
+
+    .cadastro {
+        width: 70%;
+        top: 5em;
+    }
+}

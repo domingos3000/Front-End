@@ -1,0 +1,211 @@
+/* === CORPO DA PÁGINA === */
+
+body 
+{
+    background-image: url(../img/svg/wave.svg);
+    height: 100vh;
+    background-size:  100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/* === CONTAINER === */
+
+.container
+{
+    display: flex;
+    position: relative;
+    top: 4rem;
+    position: relative;
+}
+
+/* === SVG === */
+
+.svg { 
+    width: 70%; 
+    transform: translateX(-110%);
+    transition: 1s transform linear;
+
+}
+
+.svg img {width: 100%;}
+
+/* === TÍTULO === */
+
+.caixadelogin
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    transform: translateX(110%);
+    transition: 1s transform linear;
+
+
+}
+
+.caixadelogin.voltar,
+.svg.voltar {
+    transform: none;
+}
+
+.title
+{
+    position: relative;
+    background-color: #e7008a;
+    color: #fff;
+    height: 7rem; 
+    border-radius: 0 0 2rem 2rem;
+    width: 10rem;
+    top: -7rem;
+}
+
+.title p
+{
+    text-align: center;
+    position: relative;
+    top: 4rem;
+    font-size: 1.5rem;
+}
+
+/* === FORMULÁRIO === */
+
+.formulario 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -5rem;
+}
+
+.content 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: .6rem .01rem;
+    width: 80%;
+    box-shadow: 2px 2px 36px -17px #2f2e41;
+    background-color: #fff;
+    position: relative;
+}
+
+/* === FOTO DE USUÁRIO */
+
+.formulario .userFoto {width: 20%;}
+.formulario img {width: 100%;}
+
+.formulario input[type="text"], .formulario input[type="password"]
+{
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: .3rem 0;
+    border: none;
+    border-bottom: 0.12rem solid #2f2e41;
+}
+
+.formulario input[type="text"]:focus, .formulario input[type="password"]:focus
+{
+    border-bottom: 0.12rem solid #e7008a;
+    color: #2f2e41;
+}
+
+.formulario input[type="submit"]
+{
+    width: 30%;
+    padding: .5rem 1.3rem;
+    margin: .9rem 0;
+
+    background-color: #e7008bd3;
+    color: #fff;
+    border-radius: .4rem;
+}
+
+.formulario input[type="submit"]:hover
+{
+    cursor: pointer;
+    background-color: #e7008a;
+}
+
+
+/* === DEPOIS DO INPUT SUBMIT === */
+
+.forget, .possuirconta
+{
+    margin: .3rem 0;
+}
+
+.usuario, .passe
+{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.usuario img, .passe img
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 0;
+    opacity: 50%;
+    transition: 0.5s;
+}
+
+.autor
+{
+    position: absolute;
+    bottom: 1rem;
+    left: 0.5rem;
+    color: #fff;
+}
+
+
+.cadastro {
+    left: 20%;
+    height: 300px;
+    width: 60%;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 36px -17px #2f2e41;
+    transform: translateY(-200%);
+    transition: 1s transform linear;
+}
+
+.cadastro.vir {
+    transform: none;
+}
+
+.cadastro h1 {
+    color: #e7008a;
+    font-size: 1.5em;
+}
+.cadastro input {
+    padding: .5em 1em;
+    margin: 1em 0;
+    border-bottom: 0.12rem solid #e7008a;
+    width: 80%;
+}
+
+.cadastro input[type="submit"] {
+    border-bottom: none;
+    width: 30%;
+    padding: .5rem 1.3rem;
+    margin: .9rem 0;
+
+    background-color: #e7008bd3;
+    color: #fff;
+    border-radius: .4rem;
+}
+

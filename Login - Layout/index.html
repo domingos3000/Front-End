@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-ago">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO | Login</title>
+
+    <!-- LINKS DE ESTILOS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsividade.css">
+    <!-- ================ -->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div class="container">
+
+            <form class="cadastro" id="cadastro" style="position: absolute;" action="">
+                <h1>Cadastrar</h1>
+                <input type="text" name="nome" placeholder="Insira seu nome">
+                <input type="email" name="email" placeholder="Insira seu email">
+                <input type="password" name="senha" placeholder="Insira sua senha">
+                <input type="submit" name="confirmar" value="Cadastrar">
+
+                <a href="#" id="login_form" style="color: #e7008bd3;">Login</a>
+            </form>
+
+            <div class="svg" id="svg">
+                <img src="assets/img/svg/undraw_secure_login_pdn4.svg">
+            </div>
+
+            <div class="caixadelogin" id="caixadelogin">
+
+                <div class="title">
+                    <p>LOGIN</p>
+                </div>
+
+                <form action="" class="formulario">
+                    <div class="content">
+                        <!-- FOTO DE USUARIO -->
+                        <div class="userFoto">
+                            <img src="assets/img/svg/undraw_profile_pic_ic5t.svg">
+                        </div>
+                        <!-- CAIXA / USUARIO -->
+                        <div class="usuario">
+                            <img src="assets/img/ico/user_male_circle_24px.png" class="imgusuario">
+                            <input type="text" placeholder="Usuário" class="inusuario">
+                        </div>
+                        <!-- CAIXA / PALAVRA PASSE -->
+                        <div class="passe">
+                            <img src="assets/img/ico/key_24px.png" class="imgpasse">
+                            <input type="password" placeholder="Palavra-passe" class="inpasse">
+                        </div>
+                        <!-- INPUT SUBMIT -->
+                        <input type="submit" value="Iniciar sessão" id="login" onclick="return validar()">
+
+                        <!-- LINKS DE "ESQUECEU SUA PASSE" E CADASTRO -->
+                        <a href="#" class="forget textcolor2">Esqueceu-se da palavra-passe?</a>
+
+                        <p class="possuirconta textcolor2">Já possui uma conta?
+                            <a href="#" class="criar textcolor1 txt_deco" id="criarconta">Criar conta</a>
+                        </p>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <p class="autor">By / Domingos Nkula Pedro</p>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

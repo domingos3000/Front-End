@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#wrapper {
+	overflow: hidden;
+	height: 100vh;
+}
+
+.container
+{
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+a {text-decoration: none;}
+.txt_deco:hover {text-decoration: underline;}
+
+input
+{
+    outline: none;
+    border: none;
+}
+
+.textcolor1 {color: #e7008a;}
+.textcolor2 {color: #2f2e41;}
