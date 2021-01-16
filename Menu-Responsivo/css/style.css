@@ -1,0 +1,131 @@
+/*
+    Desenvolvedor: DOMINGOS PEDRO NKULA.
+    Data: 14-01-2021
+    Endereço: Luanda (ANGOLA)
+
+    GitHub = https://github.com/domingospedro-dev
+
+    Twitter = @nkula_pedro
+
+    Facebook = /domingosnkula.pedro
+                Domingos Pedro Nkula
+
+    Instagram = @domingosnkulajw
+
+    Linkedin = linkedin.com/in/domingos-nkula-pedro-112b28203
+
+    Skills = HTML
+             CSS
+             JAVASCRIPT
+             PHP
+             MYSQL
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    overflow: hidden;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #25ca4e;
+}
+
+.header img {cursor: pointer;}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: relative;
+    color: #fff;
+}
+
+.menu-mobile {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    top: 3.8em;
+    transition: 0.5s all linear;
+    z-index: 999;
+}
+
+.menu-mobile li {
+    transition: .5s all linear;
+    background-color: #1fa03f;   
+}
+
+.menu-mobile ul > li {border-bottom: 1px solid #fff;}
+
+.menu-mobile ul li > .menu-dropdown {
+    display: none;
+    padding: .5em 1em;
+}
+
+.menu-mobile ul li > .menu-dropdown > div {
+    border-left: 3px solid #fff;
+
+}
+
+.menu-mobile ul li > .menu-dropdown a {
+    background-color: #1fa03f;
+}
+
+.menu-mobile ul li > .menu-dropdown a:hover {
+    text-decoration: underline;
+}
+
+.menu-mobile ul li > .menu-dropdown.open {
+    display: block;
+}
+
+li.linkLeft {
+    transform: translateX(-200%);
+}
+
+li.linkLeft.come {
+    transform: translateX(0);
+}
+
+li.linkRight {
+    transform: translateX(200%);
+}
+
+li.linkRight.come {
+    transform: translateX(0);
+}
+
+.menu-mobile ul li > a {
+    display: block;
+    background-color: #25ca4e;
+    padding: 1em;
+    color: #fff;
+}
+
+.menu-mobile a:hover {
+    background-color: #1fa03f;
+}
+
+@media (max-width: 500px) {
+    .menu-mobile {
+        width: 100%;
+    }
+}
