@@ -27,6 +27,16 @@ h1 {text-align: center;}
     margin: 2em auto;
 }
 
+.wrapper .container .treino:nth-child(2) {background-color: #f12f2f;}
+.wrapper .container .treino:nth-child(3) {background-color: #86f12f;}
+.wrapper .container .treino:nth-child(4) {background-color: #2fc4f1;}
+.wrapper .container .treino:nth-child(5) {background-color: #f12fb0;}
+.wrapper .container .treino:nth-child(6) {background-color: #3647e7;}
+.wrapper .container .treino:nth-child(7) {background-color: #f1cd2f;}
+.wrapper .container .treino:nth-child(8) {background-color: #00e7a2;}
+.wrapper .container .treino:nth-child(9) {background-color: #ffbb00;}
+.wrapper .container .treino:nth-child(10) {background-color: #00ffea;}
+
 .treino h2 {
     border-bottom: 1px solid #000;
     padding-bottom: .5em;
